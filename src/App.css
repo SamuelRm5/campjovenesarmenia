@@ -1,0 +1,13 @@
+html { scroll-behavior: smooth; }
+/* Sitio fijo en dark: definimos color-scheme directamente */
+:root { color-scheme: dark; }
+/* Simple animation utility */
+[data-animate] { opacity: 0; transform: translateY(16px); animation: rise .8s ease forwards; }
+@keyframes rise { to { opacity: 1; transform: translateY(0); } }
+.prose h2:first-child { margin-top: 0; }
+
+/* App-specific styles */
+.App {
+  min-height: 100vh;
+  position: relative;
+}

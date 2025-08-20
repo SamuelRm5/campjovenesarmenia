@@ -1,0 +1,168 @@
+{
+    "site": {
+        "name": "La Semilla",
+        "copyright": "Camp La Semilla. Todos los derechos reservados."
+    },
+    "navbar": {
+        "links": [
+            {
+                "href": "#sobre",
+                "label": "Sobre"
+            },
+            {
+                "href": "#info",
+                "label": "Info"
+            },
+            {
+                "href": "#actividades",
+                "label": "Actividades"
+            },
+            {
+                "href": "#galeria",
+                "label": "Galería"
+            },
+            {
+                "href": "#aseo",
+                "label": "Aseo"
+            },
+            {
+                "href": "#pago",
+                "label": "Pago"
+            },
+            {
+                "href": "#reglamento",
+                "label": "Reglamento"
+            }
+        ],
+        "ctaText": "Inscripción"
+    },
+    "hero": {
+        "title": "Camp La Semilla 2025",
+        "subtitle": "Morir para vivir",
+        "ctaPrimary": "Inscríbete Ahora",
+        "ctaSecondary": "Ver Actividades",
+        "date": "Octubre 10 - 13, 2025",
+        "location": "Armenia, Quindío - Colombia"
+    },
+    "about": {
+        "heading": "Sobre el Campamento",
+        "body": "El Campamento La Semilla 2025 es un espacio diseñado para el crecimiento integral de niños y jóvenes a través de actividades recreativas, espirituales y de servicio. Buscamos sembrar valores eternos mientras disfrutamos de la creación y la amistad."
+    },
+    "info": {
+        "heading": "Detalles Importantes",
+        "body": "Todo lo que necesitas saber para participar en esta experiencia única"
+    },
+    "reglamento": {
+        "heading": "Reglamento Básico",
+        "subtitle": "Normas clave para asegurar convivencia, seguridad y una experiencia edificante.",
+        "convivenciaLabel": "Convivencia",
+        "seguridadLabel": "Seguridad",
+        "callouts": [
+            {
+                "icon": "mdi:clock-alert",
+                "text": "La puntualidad mantiene el flujo de actividades y el respeto por el tiempo de todos."
+            },
+            {
+                "icon": "mdi:leaf",
+                "text": "Cuidar la naturaleza refleja gratitud y responsabilidad con el entorno que Dios nos da."
+            },
+            {
+                "icon": "mdi:head-heart",
+                "text": "Reporta cualquier situación inusual al equipo para actuar con rapidez y cuidado."
+            }
+        ],
+        "markdown": "## Convivencia\n- Respeto mutuo en todo momento.\n- Puntualidad en actividades y reuniones.\n- Prohibido el uso de sustancias nocivas.\n- Cuidar la naturaleza y las instalaciones.\n- Uso responsable de dispositivos electrónicos.\n\n## Seguridad\n- Seguir instrucciones de los líderes.\n- No salir de las áreas delimitadas.\n- Reportar cualquier incidente al equipo de coordinación."
+    },
+    "aseo": {
+        "heading": "Elementos de Aseo Recomendados",
+        "items": [
+            "Cepillo y crema dental",
+            "Jabón personal y shampoo",
+            "Toalla de baño y toalla pequeña",
+            "Bloqueador solar y repelente",
+            "Desodorante",
+            "Cambio de ropa interior para cada día",
+            "Sandalias y tenis cómodos",
+            "Botella reutilizable para agua"
+        ]
+    },
+    "gallery": {
+        "heading": "Momentos que Inspiran",
+        "subtitle": "Recuerdos visuales de experiencias pasadas.",
+        "filterPhotos": "Fotos",
+        "filterVideos": "Videos",
+        "items": [
+            {
+                "type": "image",
+                "src": "https://picsum.photos/seed/camp1/600/400",
+                "alt": "Cabañas"
+            },
+            {
+                "type": "image",
+                "src": "https://picsum.photos/seed/camp2/600/400",
+                "alt": "Sendero"
+            },
+            {
+                "type": "image",
+                "src": "https://picsum.photos/seed/camp3/600/400",
+                "alt": "Juego"
+            },
+            {
+                "type": "image",
+                "src": "https://picsum.photos/seed/camp4/600/400",
+                "alt": "Fogata"
+            },
+            {
+                "type": "image",
+                "src": "https://picsum.photos/seed/camp5/600/400",
+                "alt": "Alabanza"
+            },
+            {
+                "type": "image",
+                "src": "https://picsum.photos/seed/camp6/600/400",
+                "alt": "Servicio"
+            }
+        ]
+    },
+    "activities": {
+        "heading": "Actividades Destacadas",
+        "subtitle": "Un balance entre recreación, formación espiritual y desarrollo personal.",
+        "items": [
+            {
+                "icon": "mdi:fire",
+                "title": "Fogatas Nocturnas",
+                "desc": "Momentos de reflexión, música y testimonios bajo las estrellas."
+            },
+            {
+                "icon": "mdi:pine-tree",
+                "title": "Senderismo",
+                "desc": "Exploración guiada de la naturaleza y tiempos de contemplación."
+            },
+            {
+                "icon": "mdi:hand-heart",
+                "title": "Servicio",
+                "desc": "Proyectos prácticos que impactan la comunidad local."
+            },
+            {
+                "icon": "mdi:gamepad-variant",
+                "title": "Juegos y Retos",
+                "desc": "Dinámicas de equipo, deportes y competencias saludables."
+            },
+            {
+                "icon": "mdi:bible",
+                "title": "Enseñanza Bíblica",
+                "desc": "Sesiones creativas de estudio y conversación profunda."
+            },
+            {
+                "icon": "mdi:guitar-acoustic",
+                "title": "Alabanza",
+                "desc": "Momentos de adoración con música en vivo."
+            }
+        ]
+    },
+    "ctaFinal": {
+        "heading": "¿Listo para vivirlo?",
+        "body": "Los cupos son limitados. Reserva tu lugar y sé parte de esta experiencia inolvidable.",
+        "cta": "Inscribirme"
+    }
+}
