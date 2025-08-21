@@ -20,9 +20,9 @@ export default function Gallery({ gallery }) {
           <button className="px-4 py-2 rounded-full border border-gray-600 hover:bg-gray-800 transition">
             {gallery.filterPhotos}
           </button>
-          <button className="px-4 py-2 rounded-full border border-gray-600 hover:bg-gray-800 transition">
+          {/* <button className="px-4 py-2 rounded-full border border-gray-600 hover:bg-gray-800 transition">
             {gallery.filterVideos}
-          </button>
+          </button> */}
         </div>
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

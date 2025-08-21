@@ -2,7 +2,7 @@ import React from "react";
 import SectionWrapper from "./SectionWrapper";
 import { Icon } from "@iconify/react";
 
-export default function VerseSection() {
+export default function VerseSection({ verse }) {
   return (
     <SectionWrapper className="bg-gradient-to-b from-gray-950 to-gray-900 py-16">
       {/* Versículo bíblico destacado */}
@@ -17,16 +17,18 @@ export default function VerseSection() {
 
           {/* Contenido del versículo */}
           <div className="text-center pt-4">
-            <p className="text-emerald-300 text-sm font-semibold mb-3 tracking-wide">
-              JUAN 12:24-25
+            <p className="text-emerald-300 text-sm font-semibold mb-3 tracking-wide uppercase">
+              {verse.verse}
             </p>
             <blockquote className="text-white text-lg sm:text-xl leading-relaxed font-light italic">
-              "De cierto, de cierto os digo, que si el grano de trigo no cae en
-              la tierra y muere, queda solo; pero si muere, lleva mucho fruto.
-              El que ama su vida, la perderá; y el que aborrece su vida en este
-              mundo, para vida eterna la guardará."
+              {verse.text}
             </blockquote>
           </div>
+
+          <p className="text-emerald-300 text-sm font-semibold mb-3 tracking-wide uppercase absolute italic flex gap-2 items-center justify-center">
+            <Icon icon="mdi:seed" className="text-emerald-400 text-md" />
+            {verse.title}
+          </p>
 
           {/* Decoración adicional */}
           <div className="absolute top-6 left-6 w-2 h-2 bg-emerald-400/40 rounded-full" />

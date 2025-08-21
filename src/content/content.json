@@ -14,24 +14,24 @@
                 "label": "Info"
             },
             {
-                "href": "#actividades",
-                "label": "Actividades"
-            },
-            {
-                "href": "#galeria",
-                "label": "Galería"
+                "href": "#reglamento",
+                "label": "Reglamento"
             },
             {
                 "href": "#aseo",
                 "label": "Aseo"
             },
             {
-                "href": "#pago",
-                "label": "Pago"
+                "href": "#galeria",
+                "label": "Galería"
             },
             {
-                "href": "#reglamento",
-                "label": "Reglamento"
+                "href": "#actividades",
+                "label": "Actividades"
+            },
+            {
+                "href": "#pago",
+                "label": "Pago"
             }
         ],
         "ctaText": "Inscripción"
@@ -44,9 +44,14 @@
         "date": "Octubre 10 - 13, 2025",
         "location": "Armenia, Quindío - Colombia"
     },
+    "verse": {
+        "verse": "Juan 12:24-25",
+        "text": "De cierto, de cierto os digo, que si el grano de trigo no cae en la tierra y muere, queda solo; pero si muere, lleva mucho fruto. El que ama su vida, la perderá; y el que aborrece su vida en este mundo, para vida eterna la guardará.",
+        "title": "Morir para vivir"
+    },
     "about": {
         "heading": "Sobre el Campamento",
-        "body": "El Campamento La Semilla 2025 es un espacio diseñado para el crecimiento integral de niños y jóvenes a través de actividades recreativas, espirituales y de servicio. Buscamos sembrar valores eternos mientras disfrutamos de la creación y la amistad."
+        "body": "El Campamento de Jóvenes \"La Semilla 2025\" busca que cada joven conozca a Dios personalmente y crezca en su fe, descubriendo que la verdadera vida está en caminar con Cristo."
     },
     "info": {
         "heading": "Detalles Importantes",
@@ -71,19 +76,20 @@
                 "text": "Reporta cualquier situación inusual al equipo para actuar con rapidez y cuidado."
             }
         ],
-        "markdown": "## Convivencia\n- Respeto mutuo en todo momento.\n- Puntualidad en actividades y reuniones.\n- Prohibido el uso de sustancias nocivas.\n- Cuidar la naturaleza y las instalaciones.\n- Uso responsable de dispositivos electrónicos.\n\n## Seguridad\n- Seguir instrucciones de los líderes.\n- No salir de las áreas delimitadas.\n- Reportar cualquier incidente al equipo de coordinación."
+        "markdown": "## Convivencia\n- Respeto mutuo en todo momento.\n- Puntualidad en actividades y reuniones.\n- Prohibido el uso de sustancias nocivas.\n- Cuidar la naturaleza y las instalaciones.\n- Prohibido el uso de dispositivos electrónicos en actividades.\n\n## Seguridad\n- Seguir instrucciones de los líderes.\n- No salir de las áreas delimitadas.\n- Reportar cualquier incidente al equipo de coordinación.\n- Si padeces de alguna condición médica, infórmalo al equipo."
     },
     "aseo": {
         "heading": "Elementos de Aseo Recomendados",
         "items": [
+            "Biblia",
+            "Cuaderno y lápiz para tomar apuntes",
             "Cepillo y crema dental",
             "Jabón personal y shampoo",
-            "Toalla de baño y toalla pequeña",
+            "Toalla de baño",
             "Bloqueador solar y repelente",
             "Desodorante",
-            "Cambio de ropa interior para cada día",
-            "Sandalias y tenis cómodos",
-            "Botella reutilizable para agua"
+            "Ropa adecuada para deportes",
+            "Traje de baño decoroso"
         ]
     },
     "gallery": {
@@ -94,33 +100,33 @@
         "items": [
             {
                 "type": "image",
-                "src": "https://picsum.photos/seed/camp1/600/400",
-                "alt": "Cabañas"
+                "src": "/gallery/gallery_1.jpg",
+                "alt": "Campamento 2024"
             },
             {
                 "type": "image",
-                "src": "https://picsum.photos/seed/camp2/600/400",
-                "alt": "Sendero"
+                "src": "/gallery/gallery_2.jpg",
+                "alt": "Campamento 2023"
             },
             {
                 "type": "image",
-                "src": "https://picsum.photos/seed/camp3/600/400",
-                "alt": "Juego"
+                "src": "/gallery/gallery_3.jpg",
+                "alt": "Actividades"
             },
             {
                 "type": "image",
-                "src": "https://picsum.photos/seed/camp4/600/400",
+                "src": "/gallery/gallery_4.jpg",
                 "alt": "Fogata"
             },
             {
                 "type": "image",
-                "src": "https://picsum.photos/seed/camp5/600/400",
-                "alt": "Alabanza"
+                "src": "/gallery/gallery_5.jpg",
+                "alt": "Estudio Bíblico"
             },
             {
                 "type": "image",
-                "src": "https://picsum.photos/seed/camp6/600/400",
-                "alt": "Servicio"
+                "src": "/gallery/gallery_6.jpg",
+                "alt": "Premios"
             }
         ]
     },
@@ -129,19 +135,24 @@
         "subtitle": "Un balance entre recreación, formación espiritual y desarrollo personal.",
         "items": [
             {
+                "icon": "mdi:bible",
+                "title": "Enseñanza Bíblica",
+                "desc": "Sesiones de estudio, conversación y talleres bíblicos de gran valor."
+            },
+            {
                 "icon": "mdi:fire",
                 "title": "Fogatas Nocturnas",
                 "desc": "Momentos de reflexión, música y testimonios bajo las estrellas."
             },
             {
-                "icon": "mdi:pine-tree",
-                "title": "Senderismo",
-                "desc": "Exploración guiada de la naturaleza y tiempos de contemplación."
+                "icon": "mdi:pool",
+                "title": "Actividades en piscina",
+                "desc": "Diversión acuática, juegos y relajación bajo el sol."
             },
             {
-                "icon": "mdi:hand-heart",
-                "title": "Servicio",
-                "desc": "Proyectos prácticos que impactan la comunidad local."
+                "icon": "solar:health-bold",
+                "title": "Concejería",
+                "desc": "Apoyo espiritual para quienes lo necesiten."
             },
             {
                 "icon": "mdi:gamepad-variant",
@@ -149,14 +160,9 @@
                 "desc": "Dinámicas de equipo, deportes y competencias saludables."
             },
             {
-                "icon": "mdi:bible",
-                "title": "Enseñanza Bíblica",
-                "desc": "Sesiones creativas de estudio y conversación profunda."
-            },
-            {
                 "icon": "mdi:guitar-acoustic",
                 "title": "Alabanza",
-                "desc": "Momentos de adoración con música en vivo."
+                "desc": "Canticos y alabanzas en grupo."
             }
         ]
     },

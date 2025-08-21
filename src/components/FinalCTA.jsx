@@ -113,7 +113,8 @@ export default function FinalCTA({ data }) {
         {/* Botones de acción */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href={isActive ? "#pago" : "#"}
+            href={isActive ? "https://forms.gle/FuVvsahdXdPSAfoy6" : "#"}
+            target="_blank"
             onClick={isActive ? undefined : (e) => e.preventDefault()}
             className={`group relative overflow-hidden inline-flex items-center gap-3 px-12 py-5 rounded-2xl font-bold text-lg tracking-wide shadow-2xl transition-all duration-300 ${
               isActive

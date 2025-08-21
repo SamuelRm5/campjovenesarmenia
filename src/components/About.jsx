@@ -13,7 +13,7 @@ export default function About({ aboutJson }) {
     vision: {
       title: "Nuestra Visión",
       content:
-        "Ser el campamento de referencia para el crecimiento espiritual y personal de jóvenes, creando un ambiente seguro donde puedan descubrir su propósito y potencial.",
+        "Preparar jóvenes que crezcan espiritual y personalmente, conociendo al Señor y su Palabra, descubrir sus dones y ponerlos al servicio de la iglesia local.",
       icon: "mdi:eye",
     },
   };

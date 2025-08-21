@@ -24,7 +24,7 @@ function App() {
       <Navbar site={content.site} navbar={content.navbar} />
       <main>
         <Hero data={content.hero} />
-        <VerseSection />
+        <VerseSection verse={content.verse} />
         <About aboutJson={content.about} aboutMarkdown={aboutMarkdown} />
         <Info info={content.info} />
         <Reglamento reglamento={content.reglamento} />

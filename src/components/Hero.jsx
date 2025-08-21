@@ -51,7 +51,7 @@ export default function Hero({ data, onPrimaryClick }) {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href={isActive ? "#pago" : "#"}
+            href={isActive ? "#inscripcion" : "#"}
             onClick={isActive ? onPrimaryClick : (e) => e.preventDefault()}
             className={`group relative overflow-hidden flex justify-center items-center gap-2 px-8 py-4 rounded-xl font-semibold text-lg tracking-wide shadow-xl transition-all duration-300 focus:outline-none focus:ring-4 transform hover:scale-105 ${
               isActive
