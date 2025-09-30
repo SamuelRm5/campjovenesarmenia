@@ -6,8 +6,8 @@ export const CAMP_CONFIG = {
   dates: {
     campStart: "2025-10-10T08:00:00",
     campEnd: "2025-10-13T18:00:00",
-    paymentDeadline: "2025-09-28T23:59:59", // Fecha límite de pago
-    registrationDeadline: "2025-09-28T23:59:59", // Fecha límite de inscripción (Sin cupos)
+    paymentDeadline: "2025-10-03T23:59:59", // Fecha límite de pago
+    registrationDeadline: "2025-10-03T23:59:59", // Fecha límite de inscripción (Sin cupos)
   },
 
   // Información del campamento
