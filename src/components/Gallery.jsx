@@ -1,5 +1,6 @@
 import React from "react";
 import SectionWrapper from "./SectionWrapper";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 export default function Gallery({ gallery }) {
   return (
@@ -17,9 +18,6 @@ export default function Gallery({ gallery }) {
           <p className="text-gray-300">{gallery.subtitle}</p>
         </div>
         <div className="flex gap-3 text-sm text-gray-400">
-          <button className="px-4 py-2 rounded-full border border-gray-600 hover:bg-gray-800 transition">
-            {gallery.filterPhotos}
-          </button>
           {/* <button className="px-4 py-2 rounded-full border border-gray-600 hover:bg-gray-800 transition">
             {gallery.filterVideos}
           </button> */}
@@ -42,6 +40,16 @@ export default function Gallery({ gallery }) {
                 {item.alt}
               </p>
             </div>
+            {item.href && (
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute top-3 right-3 size-10 bg-black/50 text-emerald-400 p-2 rounded-full hover:bg-black/70 grid place-content-center active:scale-95 transition-all"
+              >
+                <Icon icon="mdi:link" className="text-3xl" />
+              </a>
+            )}
           </div>
         ))}
       </div>

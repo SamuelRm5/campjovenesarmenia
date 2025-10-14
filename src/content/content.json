@@ -100,32 +100,38 @@
         "items": [
             {
                 "type": "image",
-                "src": "/gallery/gallery_1.jpg",
+                "src": "/gallery/lasemilla1.webp",
+                "href": "https://drive.google.com/drive/folders/1Es36_ZpMAw_oiEU0SjVdg_BmKmxeuelx?usp=sharing",
+                "alt": "Campamento 2025"
+            },
+            {
+                "type": "image",
+                "src": "/gallery/gallery_1.webp",
                 "alt": "Campamento 2024"
             },
             {
                 "type": "image",
-                "src": "/gallery/gallery_2.jpg",
+                "src": "/gallery/gallery_2.webp",
                 "alt": "Campamento 2023"
             },
             {
                 "type": "image",
-                "src": "/gallery/gallery_3.jpg",
+                "src": "/gallery/gallery_3.webp",
                 "alt": "Actividades"
             },
             {
                 "type": "image",
-                "src": "/gallery/gallery_4.jpg",
+                "src": "/gallery/gallery_4.webp",
                 "alt": "Fogata"
             },
             {
                 "type": "image",
-                "src": "/gallery/gallery_5.jpg",
+                "src": "/gallery/gallery_5.webp",
                 "alt": "Estudio Bíblico"
             },
             {
                 "type": "image",
-                "src": "/gallery/gallery_6.jpg",
+                "src": "/gallery/gallery_6.webp",
                 "alt": "Premios"
             }
         ]
