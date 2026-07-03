@@ -1,177 +1,153 @@
 {
-    "site": {
-        "name": "La Semilla",
-        "copyright": "Camp La Semilla. Todos los derechos reservados."
-    },
-    "navbar": {
-        "links": [
-            {
-                "href": "#sobre",
-                "label": "Sobre"
-            },
-            {
-                "href": "#info",
-                "label": "Info"
-            },
-            {
-                "href": "#reglamento",
-                "label": "Reglamento"
-            },
-            {
-                "href": "#aseo",
-                "label": "Aseo"
-            },
-            {
-                "href": "#galeria",
-                "label": "Galería"
-            },
-            {
-                "href": "#actividades",
-                "label": "Actividades"
-            },
-            {
-                "href": "#pago",
-                "label": "Pago"
-            }
-        ],
-        "ctaText": "Inscripción"
-    },
-    "hero": {
-        "title": "Camp La Semilla 2025",
-        "subtitle": "Morir para vivir",
-        "ctaPrimary": "Inscríbete Ahora",
-        "ctaSecondary": "Ver Actividades",
-        "date": "Octubre 10 - 13, 2025",
-        "location": "Armenia, Quindío - Colombia"
-    },
-    "verse": {
-        "verse": "Juan 12:24-25",
-        "text": "De cierto, de cierto os digo, que si el grano de trigo no cae en la tierra y muere, queda solo; pero si muere, lleva mucho fruto. El que ama su vida, la perderá; y el que aborrece su vida en este mundo, para vida eterna la guardará.",
-        "title": "Morir para vivir"
-    },
-    "about": {
-        "heading": "Sobre el Campamento",
-        "body": "El Campamento de Jóvenes \"La Semilla 2025\" busca que cada joven conozca a Dios personalmente y crezca en su fe, descubriendo que la verdadera vida está en caminar con Cristo."
-    },
-    "info": {
-        "heading": "Detalles Importantes",
-        "body": "Todo lo que necesitas saber para participar en esta experiencia única"
-    },
-    "reglamento": {
-        "heading": "Reglamento Básico",
-        "subtitle": "Normas clave para asegurar convivencia, seguridad y una experiencia edificante.",
-        "convivenciaLabel": "Convivencia",
-        "seguridadLabel": "Seguridad",
-        "callouts": [
-            {
-                "icon": "mdi:clock-alert",
-                "text": "La puntualidad mantiene el flujo de actividades y el respeto por el tiempo de todos."
-            },
-            {
-                "icon": "mdi:leaf",
-                "text": "Cuidar la naturaleza refleja gratitud y responsabilidad con el entorno que Dios nos da."
-            },
-            {
-                "icon": "mdi:head-heart",
-                "text": "Reporta cualquier situación inusual al equipo para actuar con rapidez y cuidado."
-            }
-        ],
-        "markdown": "## Convivencia\n- Respeto mutuo en todo momento.\n- Puntualidad en actividades y reuniones.\n- Prohibido el uso de sustancias nocivas.\n- Cuidar la naturaleza y las instalaciones.\n- Prohibido el uso de dispositivos electrónicos en actividades.\n\n## Seguridad\n- Seguir instrucciones de los líderes.\n- No salir de las áreas delimitadas.\n- Reportar cualquier incidente al equipo de coordinación.\n- Si padeces de alguna condición médica, infórmalo al equipo."
-    },
-    "aseo": {
-        "heading": "¿Qué traer?",
-        "items": [
-            "Biblia",
-            "Cuaderno y lápiz para tomar apuntes",
-            "Artículos de aseo",
-            "Repelente",
-            "Ropa adecuada para deportes",
-            "Traje de baño decoroso"
-        ]
-    },
-    "gallery": {
-        "heading": "Momentos que Inspiran",
-        "subtitle": "Recuerdos visuales de experiencias pasadas.",
-        "filterPhotos": "Fotos",
-        "filterVideos": "Videos",
-        "items": [
-            {
-                "type": "image",
-                "src": "/gallery/lasemilla1.webp",
-                "href": "https://drive.google.com/drive/folders/1Es36_ZpMAw_oiEU0SjVdg_BmKmxeuelx?usp=sharing",
-                "alt": "Campamento 2025"
-            },
-            {
-                "type": "image",
-                "src": "/gallery/gallery_1.webp",
-                "alt": "Campamento 2024"
-            },
-            {
-                "type": "image",
-                "src": "/gallery/gallery_2.webp",
-                "alt": "Campamento 2023"
-            },
-            {
-                "type": "image",
-                "src": "/gallery/gallery_3.webp",
-                "alt": "Actividades"
-            },
-            {
-                "type": "image",
-                "src": "/gallery/gallery_4.webp",
-                "alt": "Fogata"
-            },
-            {
-                "type": "image",
-                "src": "/gallery/gallery_5.webp",
-                "alt": "Estudio Bíblico"
-            },
-            {
-                "type": "image",
-                "src": "/gallery/gallery_6.webp",
-                "alt": "Premios"
-            }
-        ]
-    },
-    "activities": {
-        "heading": "Actividades Destacadas",
-        "subtitle": "Un balance entre recreación, formación espiritual y desarrollo personal.",
-        "items": [
-            {
-                "icon": "mdi:bible",
-                "title": "Enseñanza Bíblica",
-                "desc": "Sesiones de estudio, conversación y talleres bíblicos de gran valor."
-            },
-            {
-                "icon": "mdi:fire",
-                "title": "Fogatas Nocturnas",
-                "desc": "Momentos de reflexión, música y testimonios bajo las estrellas."
-            },
-            {
-                "icon": "mdi:pool",
-                "title": "Actividades en piscina",
-                "desc": "Diversión acuática, juegos y relajación bajo el sol."
-            },
-            {
-                "icon": "solar:health-bold",
-                "title": "Consejería",
-                "desc": "Apoyo espiritual para quienes lo necesiten."
-            },
-            {
-                "icon": "mdi:gamepad-variant",
-                "title": "Juegos y Retos",
-                "desc": "Dinámicas de equipo, deportes y competencias saludables."
-            },
-            {
-                "icon": "mdi:guitar-acoustic",
-                "title": "Alabanza",
-                "desc": "Canticos y alabanzas en grupo."
-            }
-        ]
-    },
-    "ctaFinal": {
-        "heading": "¿Listo para vivirlo?",
-        "body": "Los cupos son limitados. Reserva tu lugar y sé parte de esta experiencia inolvidable.",
-        "cta": "Inscribirme"
-    }
+  "site": {
+    "name": "Un Corazón en Llamas para Dios",
+    "pageTitle": "Un Corazón en Llamas para Dios | Campamento de Jóvenes 2026",
+    "description": "Campamento de Jóvenes 2026 \"Un Corazón en Llamas para Dios\" - 9 al 12 de octubre en Armenia, Quindío."
+  },
+  "hero": {
+    "badge": "Campamento de Jóvenes 2026",
+    "title": "Un corazón en llamas para Dios",
+    "verseQuote": "«¿No ardía nuestro corazón cuando nos hablaba en el camino y nos explicaba las Escrituras?»",
+    "verseRef": "Lucas 24 : 32",
+    "metaDate": "9 – 12 de octubre",
+    "metaDuration": "4 días / 3 noches",
+    "metaAge": "13 años en adelante",
+    "ctaPrimary": "Inscríbete ahora",
+    "ctaSecondary": "Ver actividades",
+    "countdownLabel": "para que todo comience"
+  },
+  "about": {
+    "eyebrow": "Sobre el campamento",
+    "heading": "El corazón se enciende cuando Él habla",
+    "paragraphs": [
+      [
+        { "text": "Dos discípulos caminaban a Emaús con el corazón apagado. Estaban " },
+        { "text": "tristes", "bold": true },
+        { "text": ", tal vez " },
+        { "text": "molestos", "bold": true },
+        { "text": " al recibir las peores noticias: Jesús había muerto. Alguien se acercó, caminaba con ellos y les hablaba acerca de cosas que les hacía " },
+        { "text": "sorprenderse", "bold": true },
+        { "text": ", y sin darse cuenta, su corazón empezó a arder por dentro. Era el " },
+        { "text": "gozo", "bold": true },
+        { "text": " que viene de escuchar a Dios mismo hablando. Estaba allí mismo hablando con ellos, y les daba " },
+        { "text": "confianza", "bold": true },
+        { "text": ", aun cuando no lo sabían. Todo " },
+        { "text": "miedo", "bold": true },
+        { "text": " se había esfumado." },
+        { "break": true },
+        { "text": "Este relato resume las seis emociones básicas de toda persona que Dios usa e impacta para llevarse toda la gloria." }
+      ],
+      [
+        { "text": "Este año el tema de nuestro campamento son " },
+        { "text": "las emociones", "bold": true },
+        { "text": ": no para apagarlas ni fingirlas, sino para llevarlas al fuego correcto. Porque cuando Dios habla, el corazón no se queda igual." }
+      ]
+    ],
+    "imagenAlt": "Dos personas caminan hacia una fogata al atardecer, camino a Emaús",
+    "misionTitulo": "Misión",
+    "mision": "Encender en cada joven una pasión genuina por Jesús: un encuentro personal donde Dios hable directo al corazón, lejos del ruido de todos los días.",
+    "visionTitulo": "Visión",
+    "vision": "Formar una generación que, mediante el estudio y la meditación de la Palabra de Dios, viva con un corazón encendido por el Evangelio y lleve ese fuego a su hogar, su iglesia y su comunidad."
+  },
+  "info": {
+    "eyebrow": "Detalles importantes",
+    "heading": "Lo que necesitas saber",
+    "fechaLabel": "Fecha",
+    "edadLabel": "Edad",
+    "edadDetalle": "Jóvenes de 13 a 30 años",
+    "contactoLabel": "Contacto",
+    "ubicacionLabel": "Ubicación"
+  },
+  "reglamento": {
+    "eyebrow": "Reglamento básico",
+    "heading": "Para cuidarnos entre todos",
+    "items": [
+      "Convivencia y respeto con todos los asistentes y líderes.",
+      "Puntualidad en todas las actividades programadas.",
+      "Prohibido el uso de sustancias nocivas.",
+      "Cuidado de las instalaciones y de los espacios comunes.",
+      "Participación en las actividades y espacios de enseñanza.",
+      "Vestimenta adecuada y decorosa durante todo el campamento."
+    ]
+  },
+  "aseo": {
+    "eyebrow": "¿Qué traer?",
+    "heading": "Lo que debes llevar",
+    "items": [
+      "Biblia",
+      "Cuaderno y lápiz para apuntes",
+      "Artículos de aseo personal",
+      "Repelente",
+      "Ropa adecuada para deportes",
+      "Traje de baño decoroso"
+    ]
+  },
+  "precampamento": {
+    "badge": "Opcional",
+    "eyebrow": "Precampamento",
+    "heading": "Parque del Café",
+    "bullets": [
+      "Un día completo de parque el 8 de octubre, justo antes del campamento.",
+      "Incluye la posibilidad de quedarte la noche anterior en el local.",
+      "Costo adicional: +$100.000 sobre el precio base."
+    ],
+    "totalLabel": "Total con precampamento",
+    "disclaimer": "* El valor del precampamento está sujeto a cambios en la tarifa por parte del Parque del Café."
+  },
+  "payment": {
+    "eyebrow": "Asegura tu cupo",
+    "heading": "Tu lugar junto al fuego",
+    "urgencyToday": "hoy",
+    "urgencyDeadline": "15 de septiembre",
+    "priceBeforeLabel": "Hasta el 15 de sept.",
+    "priceAfterLabel": "Después del 15 de sept.",
+    "currentPriceBadge": "Precio actual",
+    "nequiTag": "Celular",
+    "nequiSteps": [
+      "Abre tu app Nequi",
+      "Selecciona «Enviar plata»",
+      "Ingresa el número de celular",
+      "Envía el monto de tu inscripción",
+      "Envía el comprobante por WhatsApp"
+    ],
+    "bancolombiaSteps": [
+      "Abre tu app Bancolombia",
+      "Selecciona «Transferir»",
+      "Ingresa la cuenta de ahorros",
+      "Envía el monto de tu inscripción",
+      "Envía el comprobante por WhatsApp"
+    ],
+    "comprobanteCta": "Enviar comprobante por WhatsApp"
+  },
+  "gallery": {
+    "eyebrow": "Momentos que inspiran",
+    "heading": "El fuego ya ardió antes",
+    "items": [
+      { "src": "/gallery-2026/grupo-piscina.webp", "alt": "Foto grupal del campamento junto a la piscina", "big": true },
+      { "src": "/gallery-2026/fogata-nocturna.webp", "alt": "Fogata nocturna con jóvenes reunidos alrededor del fuego" },
+      { "src": "/gallery-2026/juegos-piscina.webp", "alt": "Juegos en la piscina" },
+      { "src": "/gallery-2026/espuma.webp", "alt": "Joven deslizándose entre espuma en una actividad" },
+      { "src": "/gallery-2026/taller-biblico.webp", "alt": "Taller de enseñanza bíblica" }
+    ]
+  },
+  "activities": {
+    "eyebrow": "Actividades destacadas",
+    "heading": "Cuatro días que arden",
+    "items": [
+      { "symbol": "✝", "title": "Enseñanza bíblica", "desc": "Sesiones de estudio, conversación y talleres bíblicos de gran valor." },
+      { "symbol": "flame", "title": "Fogatas nocturnas", "desc": "Momentos de reflexión, música y testimonios." },
+      { "symbol": "≈", "title": "Piscina", "desc": "Tiempo libre, dinámicas y actividades en la piscina." },
+      { "symbol": "♥", "title": "Consejería", "desc": "Espacios personales para hablar de lo que sientes, sin máscaras." },
+      { "symbol": "◆", "title": "Juegos y retos", "desc": "Competencias en equipo, adrenalina y risas garantizadas." },
+      { "symbol": "♪", "title": "Alabanza", "desc": "Cánticos y alabanzas en grupo." }
+    ]
+  },
+  "ctaFinal": {
+    "heading": "¿Listo para que tu corazón arda?",
+    "body": "9 – 12 de octubre. Cuatro días para que Dios te hable en el camino — y nada vuelva a ser igual.",
+    "ctaPrimary": "Quiero inscribirme",
+    "ctaSecondary": "Hablar por WhatsApp",
+    "footerLine1": "Un Corazón en Llamas para Dios · Campamento de Jóvenes 2026",
+    "footerLine2": "«¿No ardía nuestro corazón…?» — Lucas 24:32"
+  }
 }

@@ -1,170 +1,135 @@
-import React, { useState, useEffect } from "react";
-import SectionWrapper from "./SectionWrapper";
-import { Icon } from "@iconify/react";
-import { CAMP_CONFIG, isCampActive } from "../config/campConfig";
-
-// Función para calcular el tiempo restante
-function calculateTimeLeft(targetDate) {
-  const difference = +new Date(targetDate) - +new Date();
-  let timeLeft = {};
-
-  if (difference > 0) {
-    timeLeft = {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((difference / 1000 / 60) % 60),
-      seconds: Math.floor((difference / 1000) % 60),
-    };
-  }
-
-  return timeLeft;
-}
+import { CAMP_CONFIG, isCampActive, waLinks } from "../config/campConfig";
 
 export default function FinalCTA({ data }) {
-  // Usar configuración global
-  const campDate = CAMP_CONFIG.dates.campStart;
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(campDate));
-  const [isUrgent, setIsUrgent] = useState(false);
-  const isActive = isCampActive();
-  const buttonText = CAMP_CONFIG.status.soldOut
+  const active = isCampActive();
+  const ctaLabel = CAMP_CONFIG.status.soldOut
     ? CAMP_CONFIG.messages.soldOut
     : CAMP_CONFIG.status.registrationClosed
-    ? CAMP_CONFIG.messages.registrationClosed
-    : CAMP_CONFIG.messages.registerNow;
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      const newTimeLeft = calculateTimeLeft(campDate);
-      setTimeLeft(newTimeLeft);
-
-      // Activar modo urgente si quedan menos de 30 días
-      if (newTimeLeft.days && newTimeLeft.days < 30) {
-        setIsUrgent(true);
-      }
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  });
-
-  const timeUnits = [
-    { label: "Días", value: timeLeft.days || 0 },
-    { label: "Horas", value: timeLeft.hours || 0 },
-    { label: "Minutos", value: timeLeft.minutes || 0 },
-    { label: "Segundos", value: timeLeft.seconds || 0 },
-  ];
+      ? CAMP_CONFIG.messages.registrationClosed
+      : data.ctaPrimary;
 
   return (
-    <SectionWrapper
-      id="inscripcion"
-      className="bg-gradient-to-br from-emerald-600 via-emerald-600 to-emerald-700 text-white relative overflow-hidden"
+    <section
+      style={{
+        position: "relative",
+        padding: "110px 24px 90px",
+        textAlign: "center",
+        background:
+          "radial-gradient(ellipse 130% 80% at 50% 115%, rgba(185,28,28,.5) 0%, rgba(154,52,18,.25) 40%, rgba(10,10,15,0) 75%)",
+      }}
     >
-      {/* Efectos de fondo animados */}
-      <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,theme(colors.emerald.400)_0%,transparent_70%)]" />
-      <div className="absolute top-0 left-0 w-full h-full">
-        <div className="absolute top-10 left-10 w-20 h-20 bg-emerald-400/10 rounded-full animate-pulse" />
-        <div className="absolute bottom-20 right-20 w-32 h-32 bg-emerald-300/10 rounded-full animate-bounce" />
-        <div className="absolute top-1/2 right-10 w-16 h-16 bg-emerald-500/10 rounded-full animate-pulse delay-1000" />
-      </div>
-
-      <div className="relative max-w-5xl mx-auto text-center animate-fadeIn">
-        {/* Título principal */}
-        <div className="mb-8">
-          <h2 className="font-display text-4xl sm:text-5xl font-bold mb-4 drop-shadow-lg">
-            {data.heading}
-          </h2>
-          <p className="text-emerald-50/90 text-xl leading-relaxed max-w-2xl mx-auto">
-            {data.body}
-          </p>
-        </div>
-
-        {/* Contador regresivo */}
-        <div className="mb-10">
-          <h3 className="text-emerald-200 text-lg font-semibold mb-6 flex items-center justify-center gap-2">
-            <Icon
-              icon="mdi:clock-time-eight"
-              className="text-2xl animate-spin"
-            />
-            {isUrgent
-              ? "¡Últimos días para inscribirse!"
-              : "Tiempo restante para el campamento"}
-          </h3>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto mb-8">
-            {timeUnits.map((unit) => (
-              <div
-                key={unit.label}
-                className={`relative p-6 rounded-2xl backdrop-blur-sm border transition-all duration-300 ${
-                  isUrgent
-                    ? "bg-red-500/20 border-red-400/30 animate-pulse"
-                    : "bg-white/10 border-white/20 hover:bg-white/15"
-                }`}
-              >
-                <div className="text-3xl md:text-4xl font-bold font-mono">
-                  {unit.value.toString().padStart(2, "0")}
-                </div>
-                <div className="text-sm text-emerald-200 uppercase tracking-wide mt-1">
-                  {unit.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Botones de acción */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <div
+        className="reveal-on-scroll"
+        style={{
+          maxWidth: 560,
+          margin: "0 auto",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 20,
+        }}
+      >
+        <h2
+          style={{
+            margin: 0,
+            fontFamily: "Anton, sans-serif",
+            fontWeight: 400,
+            textTransform: "uppercase",
+            fontSize: "clamp(36px,9vw,60px)",
+            lineHeight: 1,
+            background:
+              "linear-gradient(180deg,#fde68a 5%,#f97316 55%,#b91c1c 100%)",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
+            textWrap: "balance",
+          }}
+        >
+          {data.heading}
+        </h2>
+        <p
+          style={{
+            margin: 0,
+            fontSize: 16,
+            lineHeight: 1.6,
+            color: "rgba(245,237,224,.75)",
+            maxWidth: 420,
+            textWrap: "pretty",
+          }}
+        >
+          {data.body}
+        </p>
+        <div
+          style={{
+            display: "flex",
+            gap: 12,
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
           <a
-            href={isActive ? "https://forms.gle/FuVvsahdXdPSAfoy6" : "#"}
+            href={active ? CAMP_CONFIG.camp.formUrl : "#"}
             target="_blank"
-            onClick={isActive ? undefined : (e) => e.preventDefault()}
-            className={`group relative overflow-hidden inline-flex items-center gap-3 px-12 py-5 rounded-2xl font-bold text-lg tracking-wide shadow-2xl transition-all duration-300 ${
-              isActive
-                ? "bg-white text-emerald-700 hover:shadow-3xl hover:scale-[1.05] active:scale-95 cursor-pointer"
-                : "bg-gray-300 text-gray-600 cursor-not-allowed"
-            }`}
+            rel="noopener noreferrer"
+            onClick={active ? undefined : (e) => e.preventDefault()}
+            className="btn-ember-primary"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+              minHeight: 54,
+              padding: "15px 34px",
+              borderRadius: 999,
+              background: active
+                ? "linear-gradient(120deg,#b91c1c,#f97316 60%,#fbbf24)"
+                : "linear-gradient(120deg,#4b4b4b,#6b6b6b)",
+              color: "#1a0a05",
+              fontWeight: 700,
+              fontSize: 17,
+              textDecoration: "none",
+              boxShadow: "0 6px 30px rgba(249,115,22,.4)",
+              cursor: active ? "pointer" : "not-allowed",
+            }}
           >
-            {isActive && (
-              <div className="absolute inset-0 bg-gradient-to-r from-emerald-50 to-white group-hover:from-emerald-100 group-hover:to-emerald-50 transition-colors" />
-            )}
-            <Icon
-              icon={isActive ? "mdi:rocket-launch" : "mdi:lock"}
-              className={`text-2xl relative z-10 ${
-                isActive ? "group-hover:rotate-12" : ""
-              } transition-transform`}
-            />
-            <span className="relative z-10">{buttonText}</span>
-            {isActive && (
-              <Icon
-                icon="mdi:arrow-right"
-                className="text-xl relative z-10 group-hover:translate-x-1 transition-transform"
-              />
-            )}
+            {ctaLabel}
           </a>
-
           <a
-            href="#info"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-medium bg-emerald-800/30 hover:bg-emerald-800/50 backdrop-blur text-white border border-emerald-400/30 transition-all duration-300 hover:border-emerald-300"
+            href={waLinks.contacto()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-ember-secondary"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+              minHeight: 54,
+              padding: "15px 28px",
+              borderRadius: 999,
+              border: "1px solid rgba(245,237,224,.28)",
+              color: "#f5ede0",
+              fontWeight: 600,
+              fontSize: 16,
+              textDecoration: "none",
+              background: "rgba(255,255,255,.03)",
+            }}
           >
-            <Icon icon="mdi:information" className="text-lg" />
-            Más información
+            {data.ctaSecondary}
           </a>
-        </div>
-
-        {/* Elementos decorativos */}
-        <div className="mt-12 flex justify-center items-center gap-8 text-emerald-200/60">
-          <div className="flex items-center gap-2">
-            <Icon icon="mdi:shield-check" className="text-2xl" />
-            <span className="text-sm">Seguro y confiable</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Icon icon="mdi:heart" className="text-2xl animate-pulse" />
-            <span className="text-sm">Experiencia transformadora</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Icon icon="mdi:star" className="text-2xl" />
-            <span className="text-sm">Cupos limitados</span>
-          </div>
         </div>
       </div>
-    </SectionWrapper>
+      <footer
+        style={{
+          marginTop: 80,
+          fontSize: 12.5,
+          color: "rgba(245,237,224,.4)",
+          display: "flex",
+          flexDirection: "column",
+          gap: 6,
+        }}
+      >
+        <span>{data.footerLine1}</span>
+        <span style={{ fontStyle: "italic" }}>{data.footerLine2}</span>
+      </footer>
+    </section>
   );
 }

@@ -1,0 +1,177 @@
+{
+    "site": {
+        "name": "La Semilla",
+        "copyright": "Camp La Semilla. Todos los derechos reservados."
+    },
+    "navbar": {
+        "links": [
+            {
+                "href": "#sobre",
+                "label": "Sobre"
+            },
+            {
+                "href": "#info",
+                "label": "Info"
+            },
+            {
+                "href": "#reglamento",
+                "label": "Reglamento"
+            },
+            {
+                "href": "#aseo",
+                "label": "Aseo"
+            },
+            {
+                "href": "#galeria",
+                "label": "Galería"
+            },
+            {
+                "href": "#actividades",
+                "label": "Actividades"
+            },
+            {
+                "href": "#pago",
+                "label": "Pago"
+            }
+        ],
+        "ctaText": "Inscripción"
+    },
+    "hero": {
+        "title": "Camp La Semilla 2025",
+        "subtitle": "Morir para vivir",
+        "ctaPrimary": "Inscríbete Ahora",
+        "ctaSecondary": "Ver Actividades",
+        "date": "Octubre 10 - 13, 2025",
+        "location": "Armenia, Quindío - Colombia"
+    },
+    "verse": {
+        "verse": "Juan 12:24-25",
+        "text": "De cierto, de cierto os digo, que si el grano de trigo no cae en la tierra y muere, queda solo; pero si muere, lleva mucho fruto. El que ama su vida, la perderá; y el que aborrece su vida en este mundo, para vida eterna la guardará.",
+        "title": "Morir para vivir"
+    },
+    "about": {
+        "heading": "Sobre el Campamento",
+        "body": "El Campamento de Jóvenes \"La Semilla 2025\" busca que cada joven conozca a Dios personalmente y crezca en su fe, descubriendo que la verdadera vida está en caminar con Cristo."
+    },
+    "info": {
+        "heading": "Detalles Importantes",
+        "body": "Todo lo que necesitas saber para participar en esta experiencia única"
+    },
+    "reglamento": {
+        "heading": "Reglamento Básico",
+        "subtitle": "Normas clave para asegurar convivencia, seguridad y una experiencia edificante.",
+        "convivenciaLabel": "Convivencia",
+        "seguridadLabel": "Seguridad",
+        "callouts": [
+            {
+                "icon": "mdi:clock-alert",
+                "text": "La puntualidad mantiene el flujo de actividades y el respeto por el tiempo de todos."
+            },
+            {
+                "icon": "mdi:leaf",
+                "text": "Cuidar la naturaleza refleja gratitud y responsabilidad con el entorno que Dios nos da."
+            },
+            {
+                "icon": "mdi:head-heart",
+                "text": "Reporta cualquier situación inusual al equipo para actuar con rapidez y cuidado."
+            }
+        ],
+        "markdown": "## Convivencia\n- Respeto mutuo en todo momento.\n- Puntualidad en actividades y reuniones.\n- Prohibido el uso de sustancias nocivas.\n- Cuidar la naturaleza y las instalaciones.\n- Prohibido el uso de dispositivos electrónicos en actividades.\n\n## Seguridad\n- Seguir instrucciones de los líderes.\n- No salir de las áreas delimitadas.\n- Reportar cualquier incidente al equipo de coordinación.\n- Si padeces de alguna condición médica, infórmalo al equipo."
+    },
+    "aseo": {
+        "heading": "¿Qué traer?",
+        "items": [
+            "Biblia",
+            "Cuaderno y lápiz para tomar apuntes",
+            "Artículos de aseo",
+            "Repelente",
+            "Ropa adecuada para deportes",
+            "Traje de baño decoroso"
+        ]
+    },
+    "gallery": {
+        "heading": "Momentos que Inspiran",
+        "subtitle": "Recuerdos visuales de experiencias pasadas.",
+        "filterPhotos": "Fotos",
+        "filterVideos": "Videos",
+        "items": [
+            {
+                "type": "image",
+                "src": "/gallery/lasemilla1.webp",
+                "href": "https://drive.google.com/drive/folders/1Es36_ZpMAw_oiEU0SjVdg_BmKmxeuelx?usp=sharing",
+                "alt": "Campamento 2025"
+            },
+            {
+                "type": "image",
+                "src": "/gallery/gallery_1.webp",
+                "alt": "Campamento 2024"
+            },
+            {
+                "type": "image",
+                "src": "/gallery/gallery_2.webp",
+                "alt": "Campamento 2023"
+            },
+            {
+                "type": "image",
+                "src": "/gallery/gallery_3.webp",
+                "alt": "Actividades"
+            },
+            {
+                "type": "image",
+                "src": "/gallery/gallery_4.webp",
+                "alt": "Fogata"
+            },
+            {
+                "type": "image",
+                "src": "/gallery/gallery_5.webp",
+                "alt": "Estudio Bíblico"
+            },
+            {
+                "type": "image",
+                "src": "/gallery/gallery_6.webp",
+                "alt": "Premios"
+            }
+        ]
+    },
+    "activities": {
+        "heading": "Actividades Destacadas",
+        "subtitle": "Un balance entre recreación, formación espiritual y desarrollo personal.",
+        "items": [
+            {
+                "icon": "mdi:bible",
+                "title": "Enseñanza Bíblica",
+                "desc": "Sesiones de estudio, conversación y talleres bíblicos de gran valor."
+            },
+            {
+                "icon": "mdi:fire",
+                "title": "Fogatas Nocturnas",
+                "desc": "Momentos de reflexión, música y testimonios bajo las estrellas."
+            },
+            {
+                "icon": "mdi:pool",
+                "title": "Actividades en piscina",
+                "desc": "Diversión acuática, juegos y relajación bajo el sol."
+            },
+            {
+                "icon": "solar:health-bold",
+                "title": "Consejería",
+                "desc": "Apoyo espiritual para quienes lo necesiten."
+            },
+            {
+                "icon": "mdi:gamepad-variant",
+                "title": "Juegos y Retos",
+                "desc": "Dinámicas de equipo, deportes y competencias saludables."
+            },
+            {
+                "icon": "mdi:guitar-acoustic",
+                "title": "Alabanza",
+                "desc": "Canticos y alabanzas en grupo."
+            }
+        ]
+    },
+    "ctaFinal": {
+        "heading": "¿Listo para vivirlo?",
+        "body": "Los cupos son limitados. Reserva tu lugar y sé parte de esta experiencia inolvidable.",
+        "cta": "Inscribirme"
+    }
+}

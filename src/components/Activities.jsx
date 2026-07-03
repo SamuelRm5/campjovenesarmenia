@@ -1,37 +1,112 @@
-import React from "react";
 import SectionWrapper from "./SectionWrapper";
-import { Icon } from "@iconify/react";
 
-export default function Activities({ activities }) {
+const ICON_STYLE = {
+  "✝": { background: "rgba(251,191,36,.14)", color: "#fbbf24", fontSize: 15 },
+  "≈": { background: "rgba(96,165,250,.14)", color: "#60a5fa", fontSize: 16 },
+  "♥": { background: "rgba(251,191,36,.14)", color: "#fbbf24", fontSize: 15 },
+  "◆": { background: "rgba(249,115,22,.14)", color: "#f97316", fontSize: 14 },
+  "♪": { background: "rgba(251,191,36,.14)", color: "#fbbf24", fontSize: 15 },
+};
+
+function ActivityIcon({ symbol }) {
+  if (symbol === "flame") {
+    return (
+      <span
+        style={{
+          display: "inline-flex",
+          width: 32,
+          height: 32,
+          alignItems: "center",
+          justifyContent: "center",
+          borderRadius: 10,
+          background: "rgba(249,115,22,.16)",
+        }}
+      >
+        <span
+          style={{
+            display: "inline-block",
+            width: 12,
+            height: 12,
+            background: "linear-gradient(180deg,#fbbf24,#f97316)",
+            borderRadius: "0 50% 50% 50%",
+            transform: "rotate(45deg)",
+          }}
+        />
+      </span>
+    );
+  }
+  const style = ICON_STYLE[symbol];
+  return (
+    <span
+      style={{
+        display: "inline-flex",
+        width: 32,
+        height: 32,
+        alignItems: "center",
+        justifyContent: "center",
+        borderRadius: 10,
+        ...style,
+      }}
+    >
+      {symbol}
+    </span>
+  );
+}
+
+export default function Activities({ data }) {
   return (
     <SectionWrapper
       id="actividades"
-      className="bg-gradient-to-b from-gray-950 to-gray-900 relative overflow-hidden"
+      eyebrow={data.eyebrow}
+      heading={data.heading}
     >
-      <div className="text-center mb-14">
-        <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4 text-emerald-400">
-          {activities.heading}
-        </h2>
-        <p className="text-gray-300 max-w-2xl mx-auto">{activities.subtitle}</p>
-      </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {activities.items.map((act) => (
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))",
+          gap: 12,
+        }}
+      >
+        {data.items.map((item) => (
           <div
-            key={act.title}
-            className="group relative p-6 rounded-2xl bg-gray-900 border border-gray-700 hover:border-emerald-400/60 transition overflow-hidden"
+            key={item.title}
+            style={{
+              background: "rgba(20,14,12,.85)",
+              border: "1px solid rgba(245,237,224,.08)",
+              borderRadius: 16,
+              padding: 20,
+            }}
           >
-            <div className="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-emerald-500/0 group-hover:bg-emerald-500/10 blur-2xl transition" />
-            <div className="relative">
-              <div className="w-14 h-14 rounded-xl bg-emerald-600/20 flex items-center justify-center text-emerald-300 mb-4 shadow-inner">
-                <Icon icon={act.icon} className="text-2xl" />
-              </div>
-              <h3 className="font-semibold text-lg text-gray-100 tracking-wide mb-2">
-                {act.title}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 10,
+                marginBottom: 8,
+              }}
+            >
+              <ActivityIcon symbol={item.symbol} />
+              <h3
+                style={{
+                  margin: 0,
+                  fontSize: 15.5,
+                  fontWeight: 700,
+                  color: "#fdf6ec",
+                }}
+              >
+                {item.title}
               </h3>
-              <p className="text-gray-300 leading-relaxed text-sm">
-                {act.desc}
-              </p>
             </div>
+            <p
+              style={{
+                margin: 0,
+                fontSize: 14,
+                lineHeight: 1.55,
+                color: "rgba(245,237,224,.65)",
+              }}
+            >
+              {item.desc}
+            </p>
           </div>
         ))}
       </div>

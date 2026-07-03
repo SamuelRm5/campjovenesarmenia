@@ -1,12 +1,53 @@
 html { scroll-behavior: smooth; }
-/* Sitio fijo en dark: definimos color-scheme directamente */
 :root { color-scheme: dark; }
-/* Simple animation utility */
-[data-animate] { opacity: 0; transform: translateY(16px); animation: rise .8s ease forwards; }
-@keyframes rise { to { opacity: 1; transform: translateY(0); } }
-.prose h2:first-child { margin-top: 0; }
+body { background: #0a0a0f; }
 
-/* App-specific styles */
+@keyframes igniteWord {
+  0% { opacity: 0; filter: blur(6px); color: #fde68a; text-shadow: 0 0 18px rgba(251, 146, 60, .9); }
+  60% { opacity: 1; filter: blur(0); color: #fde68a; text-shadow: 0 0 10px rgba(251, 146, 60, .5); }
+  100% { opacity: 1; filter: blur(0); color: inherit; text-shadow: none; }
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes emberPulse {
+  0%, 100% { box-shadow: 0 0 22px rgba(249, 115, 22, .35), inset 0 0 12px rgba(251, 191, 36, .12); }
+  50% { box-shadow: 0 0 34px rgba(249, 115, 22, .55), inset 0 0 18px rgba(251, 191, 36, .2); }
+}
+@keyframes flameWiggle {
+  0%, 100% { transform: rotate(45deg) scale(1); }
+  50% { transform: rotate(43deg) scale(1.06); }
+}
+
+.reveal-on-scroll {
+  animation: rise .8s ease both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 35%;
+}
+
+.btn-ember-primary,
+.btn-ember-secondary {
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease, border-color .18s ease, background .18s ease;
+}
+.btn-ember-primary:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 40px rgba(251, 191, 36, .65), 0 0 18px rgba(249, 115, 22, .5);
+  filter: brightness(1.12);
+}
+.btn-ember-primary:active { transform: scale(.98); }
+.btn-ember-secondary:hover {
+  border-color: #fbbf24;
+  background: rgba(251, 191, 36, .08);
+}
+.btn-ember-whatsapp {
+  transition: filter .18s ease, transform .18s ease;
+}
+.btn-ember-whatsapp:hover {
+  filter: brightness(1.12);
+  transform: translateY(-2px);
+}
+
 .App {
   min-height: 100vh;
   position: relative;

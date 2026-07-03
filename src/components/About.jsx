@@ -1,119 +1,201 @@
 import SectionWrapper from "./SectionWrapper";
-import { Icon } from "@iconify/react";
 
-export default function About({ aboutJson }) {
-  // Contenido de las pestañas
-  const tabContent = {
-    mision: {
-      title: "Nuestra Misión",
-      content:
-        "Formar jóvenes íntegros a través de experiencias transformadoras que fortalezcan su fe, desarrollen su carácter y los preparen para ser líderes positivos en sus comunidades.",
-      icon: "mdi:target",
-    },
-    vision: {
-      title: "Nuestra Visión",
-      content:
-        "Preparar jóvenes que crezcan espiritual y personalmente, conociendo al Señor y su Palabra, descubrir sus dones y ponerlos al servicio de la iglesia local.",
-      icon: "mdi:eye",
-    },
-  };
+const paragraphStyle = {
+  margin: "0 0 14px",
+  lineHeight: 1.7,
+  color: "rgba(245,237,224,.78)",
+  textWrap: "pretty",
+  fontSize: 16.5,
+};
 
+function Paragraph({ parts }) {
+  return (
+    <p style={paragraphStyle}>
+      {parts.map((part, i) =>
+        part.break ? (
+          <br key={i} />
+        ) : part.bold ? (
+          <strong key={i} style={{ color: "#fde68a" }}>
+            {part.text}
+          </strong>
+        ) : (
+          <span key={i}>{part.text}</span>
+        ),
+      )}
+    </p>
+  );
+}
+
+export default function About({ data }) {
   return (
     <SectionWrapper
       id="sobre"
-      className="bg-gradient-to-b from-gray-900 to-gray-950 relative overflow-hidden"
+      eyebrow={data.eyebrow}
+      heading={data.heading}
+      headingMarginBottom={18}
     >
-      {/* Elementos decorativos de fondo */}
-      <div className="absolute top-20 right-0 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-10 left-0 w-64 h-64 bg-emerald-400/5 rounded-full blur-2xl" />
+      {data.paragraphs.map((parts, i) => (
+        <Paragraph key={i} parts={parts} />
+      ))}
 
-      <div className="relative">
-        {/* Encabezado principal */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-600/20 text-emerald-300 text-sm font-medium mb-4">
-            <Icon icon="mdi:seed-outline" className="text-lg" />
-            Sobre Camp La Semilla
+      <div
+        style={{
+          position: "relative",
+          borderRadius: 18,
+          overflow: "hidden",
+          margin: "30px 0 0",
+        }}
+      >
+        {/* placeholder: reemplazar por la foto "Camino a Emaús" 2026 cuando llegue el webp */}
+        <img
+          src="/gallery-2026/walking.webp"
+          alt={data.imagenAlt}
+          style={{
+            display: "block",
+            width: "100%",
+            height: "clamp(190px,42vw,260px)",
+            objectFit: "cover",
+            objectPosition: "center 62%",
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "linear-gradient(180deg,rgba(10,10,15,.18) 0%,rgba(10,10,15,0) 35%,rgba(10,10,15,.28) 100%)",
+            pointerEvents: "none",
+          }}
+        />
+      </div>
+
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))",
+          gap: 14,
+          marginTop: 26,
+        }}
+      >
+        <div
+          style={{
+            background:
+              "linear-gradient(160deg,rgba(185,28,28,.14),rgba(20,12,10,.9))",
+            border: "1px solid rgba(249,115,22,.25)",
+            borderRadius: 18,
+            padding: 24,
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 10,
+              marginBottom: 10,
+            }}
+          >
+            <span
+              style={{
+                display: "inline-flex",
+                width: 34,
+                height: 34,
+                alignItems: "center",
+                justifyContent: "center",
+                borderRadius: 10,
+                background: "rgba(249,115,22,.15)",
+              }}
+            >
+              <span
+                style={{
+                  display: "inline-block",
+                  width: 13,
+                  height: 13,
+                  background: "linear-gradient(180deg,#fbbf24,#f97316)",
+                  borderRadius: "0 50% 50% 50%",
+                  transform: "rotate(45deg)",
+                }}
+              />
+            </span>
+            <h3
+              style={{
+                margin: 0,
+                fontSize: 14,
+                fontWeight: 700,
+                letterSpacing: ".14em",
+                textTransform: "uppercase",
+                color: "#fde68a",
+              }}
+            >
+              {data.misionTitulo}
+            </h3>
           </div>
-          <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6">
-            {aboutJson.heading}
-          </h2>
-          <p className="text-gray-300 leading-relaxed text-xl max-w-3xl mx-auto">
-            {aboutJson.body}
+          <p
+            style={{
+              margin: 0,
+              fontSize: 15,
+              lineHeight: 1.65,
+              color: "rgba(245,237,224,.75)",
+            }}
+          >
+            {data.mision}
           </p>
         </div>
 
-        {/* Contenido principal en dos columnas */}
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Columna izquierda: Pestañas interactivas */}
-          <div>
-            {/* Contenido de la pestaña activa */}
-            <div className="bg-gray-800/30 backdrop-blur rounded-2xl p-8 border border-gray-700/50">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 rounded-lg bg-emerald-600/20 text-emerald-400">
-                  <Icon icon={tabContent["mision"].icon} className="text-xl" />
-                </div>
-                <h3 className="text-xl font-semibold text-white">
-                  {tabContent["mision"].title}
-                </h3>
-              </div>
-              <p className="text-gray-300 leading-relaxed text-lg">
-                {tabContent["mision"].content}
-              </p>
-            </div>
-
-            {/* Características destacadas */}
-            <div className="mt-8 grid grid-cols-2 gap-4">
-              <div className="flex items-center gap-3 p-4 rounded-xl bg-gray-800/30 border border-gray-700/50">
-                <Icon
-                  icon="mdi:security"
-                  className="text-emerald-400 text-xl"
-                />
-                <span className="text-gray-300 text-sm">Ambiente seguro</span>
-              </div>
-              <div className="flex items-center gap-3 p-4 rounded-xl bg-gray-800/30 border border-gray-700/50">
-                <Icon
-                  icon="mdi:nature-people"
-                  className="text-emerald-400 text-xl"
-                />
-                <span className="text-gray-300 text-sm">Conexión natural</span>
-              </div>
-            </div>
+        <div
+          style={{
+            background:
+              "linear-gradient(160deg,rgba(251,191,36,.1),rgba(20,12,10,.9))",
+            border: "1px solid rgba(251,191,36,.25)",
+            borderRadius: 18,
+            padding: 24,
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 10,
+              marginBottom: 10,
+            }}
+          >
+            <span
+              style={{
+                display: "inline-flex",
+                width: 34,
+                height: 34,
+                alignItems: "center",
+                justifyContent: "center",
+                borderRadius: 10,
+                background: "rgba(251,191,36,.15)",
+                color: "#fbbf24",
+                fontSize: 16,
+              }}
+            >
+              ♥
+            </span>
+            <h3
+              style={{
+                margin: 0,
+                fontSize: 14,
+                fontWeight: 700,
+                letterSpacing: ".14em",
+                textTransform: "uppercase",
+                color: "#fde68a",
+              }}
+            >
+              {data.visionTitulo}
+            </h3>
           </div>
-
-          {/* Columna derecha: Contenido Markdown mejorado */}
-          <div>
-            <div className="bg-gray-800/30 backdrop-blur rounded-2xl p-8 border border-gray-700/50">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 rounded-lg bg-emerald-600/20 text-emerald-400">
-                  <Icon icon={tabContent["vision"].icon} className="text-xl" />
-                </div>
-                <h3 className="text-xl font-semibold text-white">
-                  {tabContent["vision"].title}
-                </h3>
-              </div>
-              <p className="text-gray-300 leading-relaxed text-lg">
-                {tabContent["vision"].content}
-              </p>
-            </div>
-            <div className="mt-8 grid grid-cols-2 gap-4">
-              <div className="flex items-center gap-3 p-4 rounded-xl bg-gray-800/30 border border-gray-700/50">
-                <Icon
-                  icon="mdi:hands-pray"
-                  className="text-emerald-400 text-xl"
-                />
-                <span className="text-gray-300 text-sm">
-                  Crecimiento espiritual
-                </span>
-              </div>
-              <div className="flex items-center gap-3 p-4 rounded-xl bg-gray-800/30 border border-gray-700/50">
-                <Icon
-                  icon="mdi:account-multiple"
-                  className="text-emerald-400 text-xl"
-                />
-                <span className="text-gray-300 text-sm">Nuevas amistades</span>
-              </div>
-            </div>
-          </div>
+          <p
+            style={{
+              margin: 0,
+              fontSize: 15,
+              lineHeight: 1.65,
+              color: "rgba(245,237,224,.75)",
+            }}
+          >
+            {data.vision}
+          </p>
         </div>
       </div>
     </SectionWrapper>
