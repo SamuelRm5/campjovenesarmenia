@@ -22,7 +22,7 @@ export const CAMP_CONFIG = {
     minAge: 13,
     maxAge: 30,
     location:
-      "Finca Hotel Andaquies, Vía Armenia - Montenegro, Salida 2 #km 4, Armenia, Quindío",
+      "Km 2 Vereda Vía La Tebaida, Murillo, Armenia, Quindío",
     locationUrl: "https://maps.app.goo.gl/HCAHyFpyFh3nbrQ59",
     duration: "4 días / 3 noches",
     formUrl:"https://docs.google.com/forms/d/e/1FAIpQLSf2n9e6RNwbHJW6bqeJ1I8XQtyCm8It5D1BlccT06jIbA79ZQ/viewform?usp=publish-editor"
